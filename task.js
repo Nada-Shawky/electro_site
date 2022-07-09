@@ -72,11 +72,57 @@ page.onmouseout = function(){
     pag.style.display="none"
 }
 
+// screen <993
+if(window.pageXOffset < 993 ){
+    page.onmouseout = function(){
+        pag.style.display="none"
+    }
+    Gift.onmouseout = function(){
+        Gif.style.display="none"
+    }
+    Category.onmouseout = function(){
+        cat.style.display="none"
+    }
+    home.onmouseout = function(){
+        hme.style.display="none"
+    }
+
+        //onclick
+        page.onclick = function(){
+            pag.style.display="none"
+        }
+        Gift.onclick = function(){
+            Gif.style.display="none"
+        }
+        Category.onclick = function(){
+            cat.style.display="none"
+        }
+        home.onclick = function(){
+            hme.style.display="none"
+        }   
+
+
+}else{
+    page.onmouseover = function(){
+        pag.style.display="block"
+    }
+    Gift.onmouseover = function(){
+        Gif.style.display="block"
+    }
+    Category.onmouseout = function(){
+        cat.style.display="block"
+    }
+    home.onmouseout = function(){
+        hme.style.display="block"
+    }
+}
+
 /*
 ==================================
 click ==> footer
 ==================================
 */
+
 let Find1 =document.getElementById("Find1");
 let Find2 =document.getElementById("Find2");
 Find1.ondblclick= function(){
@@ -112,7 +158,6 @@ In1.ondblclick= function(){
 In1.onclick = function(){
     In2.style.display="none"
 }
-
 
 /*
 ==================================
