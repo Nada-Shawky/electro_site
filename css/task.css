@@ -1,5 +1,6 @@
 *{
     transition: 0.3s all ease-in-out;
+    font-family: "Lucida Sans Unicode";
 }
 
 /* scroll up */
@@ -148,6 +149,9 @@
 
  /* nav */
 
+ .navv .img1 h6{
+    padding-right: 20px;
+ }
  .navv2{
      display: none;
  }
@@ -157,7 +161,8 @@
     padding: 8px;
  }
  .navv2 .icon5{
-    align-items: center!important;
+    align-items: baseline!important;
+    padding-top: 16px;
  } 
  .navv2 .icon5 div{
     font-size: 24px;
@@ -180,6 +185,13 @@
  }
 .navv{
     margin-top: 30px;
+}
+.navv .dropdown-menu{
+    padding: 22px;
+}
+
+.navv .img p{
+    padding-right: 10px;
 }
  .dep{
     font-weight: bold;
@@ -251,12 +263,12 @@
     top:0%
 }
 .slide2{
-    display: none;
+    display: none !important;
 }
 
 
 .inner{
-    background-image: url(../images/slider.png);
+    background-image: url(./slider.png);
 }
 .w-100 {
     height: 500px;
@@ -364,6 +376,10 @@
 
 .countDown{
     margin-top: 30px;
+}
+.countDown a{
+    text-decoration: none;
+    color: black;
 }
 .countDown .count{
     border: 2px solid #FED700;
@@ -615,6 +631,15 @@
 .Bestsellers .bestSell .names{
     border: none;
 }
+.Bestsellers .angle-righ{
+    position: absolute;
+    left: 40px;
+}
+
+.Bestsellers .angle-lftt{
+    position: absolute;
+    right: 40px;
+}
 
 /* small slider */
 .smallSlider .sahm2 {
@@ -769,8 +794,9 @@
 }
 .footer ul li:hover{
     color: #c30202;
-    transform: scale(1 , 1.2);
+    /* transform: scale(1 , 1.2); */
     font-weight: 600;
+    cursor: pointer;
 }
 .list .Bold{
     padding: 27px 0;
